@@ -1,0 +1,104 @@
+html {
+  background: url(img/dungeon.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  float: center;
+  height: auto;
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  font-family: 'Merriweather', serif;
+}
+.display {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding: 0px 0px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.header {
+  padding: 10px 10px;
+}
+.classes {
+  display: flex;
+  grid-row: auto;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  object-fit: fill;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.fighter--wizard {
+  background-image: url(img/wizard.jpg);
+  color: #9966ff;
+}
+.fighter--paladin {
+  background-image: url(img/knight.jpg);
+  color: #0066ff;
+}
+.fighter--cleric {
+  background-image: url(img/cleric.jpg);
+  color: #00cc66;
+}
+.hitpoints {
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.actions {
+  visibility: hidden;
+  display: grid;
+  grid-row: auto;
+  justify-content: center;
+  grid-column: 4;
+  grid-row: 2;
+  margin-right: auto;
+  margin-left: auto;
+  grid-gap: 5px;
+  width: 50%;
+  height: 21%;
+  background-color: rgba(40, 211, 205, 0.5);
+}
+.attacks {
+  visibility: hidden;
+}
+.attackResults {
+  visibility: hidden;
+}
+button {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 6px 30px;
+  border: black;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+#playAgain {
+  visibility: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+}

@@ -1,0 +1,42 @@
+<!-- Homework 2.1 -->
+
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- <script src="init.js"></script> -->
+  <script type="text/javascript" src="init.js"></script>
+<head>
+</head>
+
+<body>
+  <title>Aaron Hellman HW4</title>
+
+  <section class="display">
+    <div id = "header" class="header">Choose your class wisely!</div>
+    <div class="classes">
+      <div id = "pally" class="classes fighter--paladin" style="cursor: pointer;" onclick="chosePaladin()">Paladin</div>
+      <div id = "wiz" class="classes fighter--wizard" style="cursor: pointer;" onclick="choseWizard()">Wizard</div>
+      <div id = "cler" class="classes fighter--cleric" style="cursor: pointer;" onclick="choseCleric()">Cleric</div>
+    </div>
+  </section>
+
+  <section id = "actions" class="actions">
+    <div class="hitpoints"></div>
+    <p id="fighterHitpoints">Your hitpoints: </p>
+    <p id="enemyHitpoints">Enemy hitpoints: </p>
+    <div id = "attacks" class="attacks">
+      <button type="button" name="weaponAttack" onclick="weaponAttack()">Weapon Attack</button>
+      <button type="button" name="castSmite" onclick="smite()">Cast Smite</button>
+      <button type="button" name="castFire" onclick="fireball()">Cast Fireball</button>
+    </div>
+    <div id = "attackResults" class="attackResults">
+      <p id = "outgoingAttack"></p>
+      <p id = "incomingAttack"></p>
+    </div>
+  </section>
+  <button id = "playAgain" type="button" name="playAgain" onclick="playAgain()">Play Again?</button>
+
+</body>
+
+</html>
